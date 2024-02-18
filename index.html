@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="//abs.twimg.com/favicons/twitter.3.ico">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="./css/output.css">
+</head>
+
+<body class="bg-black text-white">
+    <div class="flex md:container mx-auto">
+        <div class="first w-16 md:w-[70%]">
+
+            <div class="sidebar flex md:items-end flex-col sticky top-0">
+                <div class="logo invert my-4 self-start mx-2 md:mx-16">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"
+                        class=" w-8 m-auto r-4qtqp9 r-yyyyoo r-dnmrzs r-bnwqim r-1plcrui r-lrvibr r-19wmn03 r-1nao33i r-16y2uox r-lwhw9o">
+                        <g>
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z">
+                            </path>
+                        </g>
+                    </svg>
+                </div>
+
+                <ul class="flex flex-col text-2xl space-y-3 md:px-11 font-bold w-full">
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full ">
+                        <span class=" text-3xl material-symbols-outlined">HOme</span><span
+                            class="hidden md:block">Home</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full ">
+                        <span class=" text-3xl material-symbols-outlined">search</span><span
+                            class="hidden md:block">Explore</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full ">
+                        <span class=" text-3xl material-symbols-outlined">notifications</span><span
+                            class="hidden md:block">Notifications</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full ">
+                        <span class=" text-3xl material-symbols-outlined">mail</span><span
+                            class="hidden md:block">Messages</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full ">
+                        <span class=" text-3xl material-symbols-outlined">add</span><span
+                            class="hidden md:block">Grok</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full ">
+                        <span class=" text-3xl material-symbols-outlined">article</span><span
+                            class="hidden md:block">Lists</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full ">
+                        <span class=" text-3xl material-symbols-outlined">bookmark</span><span
+                            class="hidden md:block">Bookmarks</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full ">
+                        <span class=" text-3xl material-symbols-outlined">groups</span><span
+                            class="hidden md:block">Communities</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full ">
+                        <span class=" text-3xl material-symbols-outlined">add</span><span
+                            class="hidden md:block">Premium</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full ">
+                        <span class=" text-3xl material-symbols-outlined">person</span><span
+                            class="hidden md:block">Profile</span>
+                    </li>
+                    <li
+                        class="flex md:justify-start items-center gap-3 justify-center mr-4 md:w-fit hover:bg-gray-900 hover:cursor-pointer px-5 py-2 hover:rounded-full ">
+                        <span class=" text-3xl material-symbols-outlined">more_horiz</span><span
+                            class="hidden md:block">More</span>
+                    </li>
+                    <li>
+                        <div class="button w-full text-center my-4">
+                            <button
+                                class="hidden md:block bg-[#1d9bf0] px-20 text-xl rounded-full text-white py-3">Post</button>
+                            <button class="md:hidden bg-[#1d9bf0] px-4 text-xl rounded-full text-white py-3">
+                                <span class="material-symbols-outlined">
+                                    edit
+                                </span>
+                            </button>
+                        </div>
+
+                    </li>
+
+                </ul>
+
+                <div class="userprofile w-full mt-10 justify-end mx-10 hidden md:flex">
+                    <div class="item p-3  flex items-center gap-5 mx-[88px] hover:bg-[#2a2a2c5c] cursor-pointer rounded-full w-fit justify-between">
+
+                        <div class="p1 space-x-8">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1744393322418802688/-ZF7VwbA_200x200.jpg"
+                                alt="profile">
+                        </div>
+                        <div class="p2">
+                            <div>Alex</div>
+                            <div class="text-gray-500">@Alex_04</div>
+                        </div>
+
+                        <div class="p3 text-2xl space-x-8">
+                            <span class="material-symbols-outlined hover:bg-[#1d9cf027] p-2 rounded-full">
+                                more_horiz
+                                </span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="second w-full border-[1px] border-x-gray-700 border-y-black ">
+            <div class="top flex p-3 relative hover:bg-[#2a2a2c5c]">
+                <div class="absolute w-16 h-1 rounded-full bg-blue-600 bottom-0 left-[19.5%] z-10 "></div>
+                <div
+                    class="left bg-red-20011 w-1/2 flex justify-center font-bold text-lg hover:cursor-pointer hover:bg-[#2a2a2c5c]">
+                    For You </div>
+                <div
+                    class="right bg-green-20011 w-1/2 flex justify-center font-bold text-lg hover:cursor-pointer hover:bg-[#2a2a2c5c]">
+                    Following</div>
+                <div class="settings hover:text-[#1D9BF0] cursor-pointer"><span class="material-symbols-outlined">
+                        settings
+                    </span></div>
+            </div>
+            <div class="h-[1px] w-full bg-gray-700"></div>
+            <div class="whatishapp flex gap-4 my-3">
+                <div class="img m-2 w-16">
+
+                    <img class="rounded-full"
+                        src="https://pbs.twimg.com/profile_images/1744393322418802688/-ZF7VwbA_200x200.jpg" alt="">
+                </div>
+                <div class="w-full">
+                    <input class="w-full h-7 my-2 bg-black text-xl text-white outline-none" type="text"
+                        placeholder="What is Happening?!">
+                    <div class="flex text-[#1D9BF0] items-center gap-2 w-full my-4">
+                        <span class="material-symbols-outlined">
+                            globe_asia
+                        </span>
+                        <span class="font-bold">Everyone Can Reply</span>
+                    </div>
+                    <div class="w-[90%] h-[0.1px] bg-gray-800 my-3"></div>
+                    <div class="flex justify-between">
+
+
+                        <div class="blueicons flex gap-2 text-[#1D9BF0] items-center">
+                            <span class="material-symbols-outlined cursor-pointer">
+                                image
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                gif_box
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                ballot
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                sentiment_satisfied
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer">
+                                calendar_clock
+                            </span>
+                            <span class="material-symbols-outlined cursor-pointer text-[#1d9cf085]">
+                                location_on
+                            </span>
+                        </div>
+                        <div class="postbtn">
+                            <button
+                                class="hidden md:block bg-[#1d9bf0] px-6 mx-3 text-sm rounded-full py-2 text-white font-bold">Post</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <hr> -->
+            <div class="h-[1px] w-full bg-gray-700"></div>
+            <div class="posts">
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-16 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1722080266188165120/0nHdyfMZ_200x200.jpg"
+                                alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer"> Genshin Impact</span><span
+                                class="text-gray-500">@GenshinImpact ·Jan 19</span>
+                            <div>Version 4.4 "Vibrant Harriers Aloft in Spring Breeze" About | <span
+                                    class="text-blue-500 cursor-pointer">#GenshinImpact</span>
+                            </div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-lg"
+                                    src="https://pbs.twimg.com/media/GEwW_QUagAELAZ2?format=jpg&name=small" alt="">
+                            </div>
+                            <div class="icons justify-between flex mx-3 text-gray-600 cursor-pointer">
+                                <div class="icon flex items-center justify-center hover:text-[#1D9BF0] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#1d9cf027] p-2 rounded-full">
+                                        quick_phrases
+                                    </span>88k
+                                </div>
+                                <div class="icon flex items-center justify-center hover:text-[#54ba8c] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#1d9cf027] p-2 rounded-full">
+                                        repeat
+                                    </span>66.8k
+                                </div>
+                                <div class="icon flex items-center justify-center hover:text-[#e9668f] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#f01d9c1d] p-2 rounded-full">
+                                        favorite
+                                    </span>80k
+                                </div>
+                                <div class="icon flex items-center justify-center hover:text-[#1D9BF0] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#1d9cf027] p-2 rounded-full">
+                                        bar_chart
+                                    </span>1.1M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[1px] w-full bg-gray-700"></div>
+
+                </div>
+                <!-- post ====2 -->
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-16 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1562523305927618561/wbdOmBqz_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer">Marvel Studios</span><span
+                                class="text-gray-500">@MarvelStudios ·Jan 25</span>
+                            <div>Congratulations to Marvel Studios<span
+                                    class="text-blue-500 cursor-pointer">#IAmGroot</span>on their NAACP Image Awards
+                                nomination for Outstanding Short Form Series (Comedy or Drama)! <span
+                                    class="text-blue-500 cursor-pointer">#NAACPImageAwards</span>
+                            </div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-lg"
+                                    src="https://pbs.twimg.com/media/GEs9PT_WoAExLPv?format=jpg&name=small" alt="">
+                            </div>
+                            <div class="icons justify-between flex mx-3 text-gray-600 cursor-pointer">
+                                <div class="icon flex items-center justify-center hover:text-[#1D9BF0] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#1d9cf027] p-2 rounded-full">
+                                        quick_phrases
+                                    </span>88k
+                                </div>
+                                <div class="icon flex items-center justify-center hover:text-[#54ba8c] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#1d9cf027] p-2 rounded-full">
+                                        repeat
+                                    </span>66.8k
+                                </div>
+                                <div class="icon flex items-center justify-center hover:text-[#e9668f] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#f01d9c1d] p-2 rounded-full">
+                                        favorite
+                                    </span>80k
+                                </div>
+                                <div class="icon flex items-center justify-center hover:text-[#1D9BF0] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#1d9cf027] p-2 rounded-full">
+                                        bar_chart
+                                    </span>1.1M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[1px] w-full bg-gray-700"></div>
+
+                </div>
+                <!-- post ====3 -->
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-16 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1691547540141805568/lthFFkVh_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer"> Genshin Impact
+                                Mains</span><span class="text-gray-500">@GenshinImpactmains ·Jan 27</span>
+                            <div>"Hello, Travelers~ Lantern Rite is just around the corner! Exited bout what kind of
+                                wonderful events will be in this new Version update~"| <span
+                                    class="text-blue-500 cursor-pointer">#GenshinImpact #HoYoverse</span>
+                            </div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-lg"
+                                    src="https://pbs.twimg.com/media/FgceUeXX0AAj5Kz?format=jpg&name=small" alt="">
+                            </div>
+                            <div class="icons justify-between flex mx-3 text-gray-600 cursor-pointer">
+                                <div class="icon flex items-center justify-center hover:text-[#1D9BF0] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#1d9cf027] p-2 rounded-full">
+                                        quick_phrases
+                                    </span>88k
+                                </div>
+                                <div class="icon flex items-center justify-center hover:text-[#54ba8c] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#1d9cf027] p-2 rounded-full">
+                                        repeat
+                                    </span>66.8k
+                                </div>
+                                <div class="icon flex items-center justify-center hover:text-[#e9668f] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#f01d9c1d] p-2 rounded-full">
+                                        favorite
+                                    </span>80k
+                                </div>
+                                <div class="icon flex items-center justify-center hover:text-[#1D9BF0] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#1d9cf027] p-2 rounded-full">
+                                        bar_chart
+                                    </span>1.1M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[1px] w-full bg-gray-700"></div>
+
+                </div>
+                <!-- post ====4 -->
+                <div class="post">
+                    <div class="flex">
+                        <div class="image m-4">
+                            <img class="w-16 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1399691517632016388/aVcamqck_bigger.jpg"
+                                alt="">
+                        </div>
+                        <div class="content my-3">
+                            <span class="font-bold hover:underline hover:cursor-pointer"> Genshin Impact</span><span
+                                class="text-gray-500">@GenshinImpact ·Jan 28</span>
+                            <div>Adeptus Mechanical Marvel — The Web Event for Genshin Impact's new character Xianyun is
+                                now available.<span class="text-blue-500 cursor-pointer">#Lantern Rite #GenshinImpact
+                                    #Xiao</span>
+                            </div>
+                            <div class="postimg m-4 ml-0">
+                                <img class="rounded-lg"
+                                    src="https://pbs.twimg.com/media/GEqp40BasAAljeK?format=jpg&name=small" alt="">
+                            </div>
+                            <div class="icons justify-between flex mx-3 text-gray-600 cursor-pointer">
+                                <div class="icon flex items-center justify-center hover:text-[#1D9BF0] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#1d9cf027] p-2 rounded-full">
+                                        quick_phrases
+                                    </span>88k
+                                </div>
+                                <div class="icon flex items-center justify-center hover:text-[#54ba8c] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#1d9cf027] p-2 rounded-full">
+                                        repeat
+                                    </span>66.8k
+                                </div>
+                                <div class="icon flex items-center justify-center hover:text-[#e9668f] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#f01d9c1d] p-2 rounded-full">
+                                        favorite
+                                    </span>80k
+                                </div>
+                                <div class="icon flex items-center justify-center hover:text-[#1D9BF0] group">
+                                    <span class="material-symbols-outlined group-hover:bg-[#1d9cf027] p-2 rounded-full">
+                                        bar_chart
+                                    </span>1.1M
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="h-[1px] w-full bg-gray-700"></div>
+
+                </div>
+            </div>
+
+        </div>
+        <div class="third w-full bg-red-5044 ml-3 mt-0 hidden md:block">
+
+            <div class="search m-3">
+                <input type="text" class="w-[58%] rounded-full bg-[#16181c] text-white px-4 py-2" placeholder="search">
+            </div>
+
+            <div class="whats sticky top-0 m-3 bg-[#16181c] w-[56%] py-5 rounded-xl space-y-3">
+                <h1 class="text-2xl font-bold px-3">whats Happening</h1>
+                <div class="item p-3 hover:bg-[#2a2a2c5c] cursor-pointer">
+                    <div class="text-sm text-gray-200">Trending in India</div>
+                    <div class="font-bold">#Genshin Impact</div>
+                    <div class="text-sm text-gray-200">40.2k posts</div>
+                </div>
+
+                <div class="item p-3 hover:bg-[#2a2a2c5c] cursor-pointer">
+                    <div class="text-sm text-gray-200">GameZone: Trending</div>
+                    <div class="font-bold">#Genshin Impact</div>
+                    <div class="text-sm text-gray-200">80.8k posts</div>
+                </div>
+
+                <div class="item p-3 hover:bg-[#2a2a2c5c] cursor-pointer">
+                    <div class="text-sm text-gray-200">World : Trending</div>
+                    <div class="font-bold">#Crypto</div>
+                    <div class="text-sm text-gray-200">99.1k posts</div>
+                </div>
+                <!-- 
+                <div class="item p-3 hover:bg-gray-900 cursor-pointer">
+                    <div class="text-sm text-gray-200">Tavelling : Himachal</div>
+                    <div class="font-bold">#Winter Arc</div>
+                    <div class="text-sm text-gray-200">44.6k posts</div>
+                </div> -->
+                <div class="text-blue-400 my-5 px-3 hover:bg-[#2a2a2c5c] hover:underline cursor-pointer">Show more</div>
+            </div>
+
+            <!-- who to follow -->
+            <div class="who sticky top-[58vh] m-3  bg-[#16181c] w-[56%] py-5 rounded-xl space-y-1">
+                <h1 class="text-2xl font-bold px-3">who to follow</h1>
+
+
+                <div class="item p-3  flex items-center justify-between gap-2 hover:bg-[#2a2a2c5c] cursor-pointer">
+                    <div class="flex gap-3">
+                        <div class="p1">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1605897783482933249/2dImWCjR_bigger.jpg"
+                                alt="akaza">
+                        </div>
+                        <div class="p2">
+                            <div>Vercel</div>
+                            <div class="text-gray-500">@vercel</div>
+                        </div>
+                    </div>
+                    <div class="p3">
+                        <button
+                            class="bg-white text-black px-6 py-1.5 rounded-full font-bold cursor-pointer">Follow</button>
+                    </div>
+                </div>
+                <div class="item p-3  flex items-center justify-between gap-2 hover:bg-[#2a2a2c5c] cursor-pointer">
+                    <div class="flex gap-3">
+                        <div class="p1">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1605897783482933249/2dImWCjR_bigger.jpg"
+                                alt="akaza">
+                        </div>
+                        <div class="p2">
+                            <div>Vercel</div>
+                            <div class="text-gray-500">@vercel</div>
+                        </div>
+                    </div>
+                    <div class="p3">
+                        <button
+                            class="bg-white text-black px-6 py-1.5 rounded-full font-bold cursor-pointer">Follow</button>
+                    </div>
+                </div>
+                <div class="item p-3  flex items-center justify-between gap-2 hover:bg-[#2a2a2c5c] cursor-pointer">
+                    <div class="flex gap-3">
+                        <div class="p1">
+                            <img class="w-12 h-12 rounded-full"
+                                src="https://pbs.twimg.com/profile_images/1606405021674770432/4_Rj_Mi2_bigger.jpg"
+                                alt="akaza">
+                        </div>
+                        <div class="p2">
+                            <div>Naruto</div>
+                            <div class="text-gray-500">@Naruto
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p3">
+                        <button
+                            class="bg-white text-black px-6 py-1.5 rounded-full font-bold cursor-pointer">Follow</button>
+                    </div>
+                </div>
+
+                <div class="text-blue-400 my-5 px-3 hover:bg-[#2a2a2c5c] hover:underline cursor-pointer">Show more</div>
+                
+            </div>
+
+        
+
+
+            
+    </div>
+    
+
+</body>
+
+</html>
